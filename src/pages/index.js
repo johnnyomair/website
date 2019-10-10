@@ -1,21 +1,47 @@
-import React from "react"
-import { Link } from "gatsby"
+import React from "react";
+import { Link } from "gatsby";
 
-import Layout from "../components/layout"
-import Image from "../components/image"
-import SEO from "../components/seo"
+import Layout from "../components/layout";
+import Image from "../components/image";
+import SEO from "../components/seo";
+import Icon from "@mdi/react";
+import {
+  mdiAccount,
+  mdiTwitter,
+  mdiMail,
+  mdiGithubBox,
+  mdiGithubCircle,
+  mdiGmail,
+} from "@mdi/js";
+import Styles from "./index.module.css";
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
+    <Image />
+    <h1>Johannes Obermair</h1>
+    <p>Software developer from Salzburg, Austria.</p>
+    <div className={Styles.social}>
+      <a
+        href="mailto:johannes.obermair@gmail.com"
+        className={`${Styles.link} ${Styles.gmail}`}
+      >
+        <Icon path={mdiGmail} size={1.5} />
+      </a>
+      <a
+        href="https://www.twitter.com/johnnyomair"
+        className={`${Styles.link} ${Styles.twitter}`}
+      >
+        <Icon path={mdiTwitter} size={1.5} />
+      </a>
+      <a
+        href="https://www.github.com/johnnyomair"
+        className={`${Styles.link} ${Styles.github}`}
+      >
+        <Icon path={mdiGithubCircle} size={1.5} />
+      </a>
     </div>
-    <Link to="/page-2/">Go to page 2</Link>
   </Layout>
-)
+);
 
-export default IndexPage
+export default IndexPage;

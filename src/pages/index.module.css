@@ -1,0 +1,20 @@
+.link {
+  margin: 8px;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+}
+
+.gmail:hover {
+  fill: #ea4335;
+}
+
+.twitter:hover {
+  fill: #1da1f2;
+}
+
+.github:hover {
+  fill: #4078c0;
+}
