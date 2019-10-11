@@ -15,18 +15,21 @@ const IndexPage = () => (
     <div className={Styles.social}>
       <a
         href="mailto:johannes.obermair@gmail.com"
+        title="Send me an email"
         className={`${Styles.link} ${Styles.gmail}`}
       >
         <Icon path={mdiGmail} size={1.5} />
       </a>
       <a
         href="https://www.twitter.com/johnnyomair"
+        title="Link to my Twitter profile"
         className={`${Styles.link} ${Styles.twitter}`}
       >
         <Icon path={mdiTwitter} size={1.5} />
       </a>
       <a
         href="https://www.github.com/johnnyomair"
+        title="Link to my GitHub profile"
         className={`${Styles.link} ${Styles.github}`}
       >
         <Icon path={mdiGithubCircle} size={1.5} />
