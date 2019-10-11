@@ -19,8 +19,8 @@ const Image = () => {
     query {
       placeholderImage: file(relativePath: { eq: "profile-picture.jpg" }) {
         childImageSharp {
-          fluid(maxWidth: 200) {
-            ...GatsbyImageSharpFluid
+          fixed(width: 200) {
+            ...GatsbyImageSharpFixed
           }
         }
       }
@@ -28,11 +28,8 @@ const Image = () => {
   `);
 
   return (
-    <div className={Styles.container}>
-      <Img
-        fluid={data.placeholderImage.childImageSharp.fluid}
-        className={Styles.image}
-      />
+    <div className={Styles.image}>
+      <Img fixed={data.placeholderImage.childImageSharp.fixed} />
     </div>
   );
 };
