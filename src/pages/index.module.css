@@ -7,6 +7,12 @@
   justify-self: center;
 }
 
+.gmail,
+.twitter,
+.github {
+  fill: var(--icon-color);
+}
+
 .gmail:hover {
   fill: #ea4335;
 }

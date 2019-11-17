@@ -1,3 +1,9 @@
+:root {
+  --background-color: #ffffff;
+  --text-color: #000000;
+  --icon-color: #000000;
+}
+
 * {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
@@ -6,6 +12,8 @@
 
 body {
   margin: 0;
+  background-color: var(--background-color);
+  color: var(--text-color);
 }
 
 h1 {
@@ -23,4 +31,12 @@ p {
   justify-content: center;
   align-content: center;
   padding: 48px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-color: #222222;
+    --text-color: rgba(255, 255, 255, 0.8);
+    --icon-color: rgba(255, 255, 255, 0.8);
+  }
 }
