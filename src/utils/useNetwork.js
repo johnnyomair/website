@@ -1,16 +1,23 @@
 import { useEffect, useState } from "react";
 
 export function useNetwork() {
-  const [isOnline, setNetwork] = useState(window.navigator.onLine);
+  const [isOnline, setNetwork] = useState(
+    typeof window !== `undefined` ? window.navigator.onLine : true,
+  );
   const updateNetwork = () => {
     setNetwork(window.navigator.onLine);
   };
   useEffect(() => {
-    window.addEventListener("offline", updateNetwork);
-    window.addEventListener("online", updateNetwork);
+    if (typeof window !== `undefined`) {
+      window.addEventListener("offline", updateNetwork);
+      window.addEventListener("online", updateNetwork);
+    }
+
     return () => {
-      window.removeEventListener("offline", updateNetwork);
-      window.removeEventListener("online", updateNetwork);
+      if (typeof window !== `undefined`) {
+        window.removeEventListener("offline", updateNetwork);
+        window.removeEventListener("online", updateNetwork);
+      }
     };
   });
   return isOnline;
