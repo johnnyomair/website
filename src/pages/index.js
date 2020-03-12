@@ -3,7 +3,7 @@ import Icon from "@mdi/react";
 import React from "react";
 import Image from "../components/image";
 import Layout from "../components/layout";
-import { OfflineIndicator } from "../components/OfflineIndicator";
+import { OfflineHint } from "../components/OfflineHint";
 import SEO from "../components/seo";
 import { useNetwork } from "../utils/useNetwork";
 import Styles from "./index.module.css";
@@ -40,7 +40,7 @@ const IndexPage = () => {
           <Icon path={mdiGithubCircle} size={1.5} />
         </a>
       </div>
-      {!isOnline && <OfflineIndicator />}
+      {!isOnline && <OfflineHint />}
     </Layout>
   );
 };
