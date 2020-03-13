@@ -1,4 +1,4 @@
-import { mdiGithubCircle, mdiGmail, mdiTwitter } from "@mdi/js";
+import { mdiGithub, mdiGmail, mdiTwitter } from "@mdi/js";
 import Icon from "@mdi/react";
 import React from "react";
 import Image from "../components/image";
@@ -32,7 +32,7 @@ const IndexPage = () => (
         title="Link to my GitHub profile"
         className={`${Styles.link} ${Styles.github}`}
       >
-        <Icon path={mdiGithubCircle} size={1.5} />
+        <Icon path={mdiGithub} size={1.5} />
       </a>
     </div>
   </Layout>
