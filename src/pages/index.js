@@ -5,6 +5,7 @@ import Image from "../components/image";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import Styles from "./index.module.css";
+import { Projects } from "../components/Projects";
 
 const IndexPage = () => (
   <Layout>
@@ -35,6 +36,8 @@ const IndexPage = () => (
         <Icon path={mdiGithub} size={1.5} />
       </a>
     </div>
+
+    <Projects />
   </Layout>
 );
 
