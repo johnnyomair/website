@@ -1,0 +1,17 @@
+backend:
+  name: github
+  repo: johnnyomair/homepage
+
+media_folder: static/assets
+public_folder: /assets
+
+collections:
+  - name: project
+    label: Project
+    folder: projects
+    create: true
+    fields:
+      - { name: title, label: Title }
+      - { name: description, label: Description }
+      - { name: date, label: Date, widget: date }
+      - { name: link, label: Link }
