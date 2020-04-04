@@ -32,11 +32,3 @@ p {
   align-content: center;
   padding: 48px;
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background-color: #222222;
-    --text-color: rgba(255, 255, 255, 0.8);
-    --icon-color: rgba(255, 255, 255, 0.8);
-  }
-}
