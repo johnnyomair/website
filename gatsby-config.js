@@ -19,7 +19,7 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `Johannes Obermair`,
-        short_name: `starter`,
+        short_name: `Johannes Obermair`,
         start_url: `/`,
         background_color: `#008080`,
         theme_color: `#008080`,

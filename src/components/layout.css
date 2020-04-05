@@ -30,9 +30,9 @@ img {
 }
 
 :root {
-  --color-primary: #009688;
-  --color-primary-light: #52c7b8;
-  --color-primary-dark: #00675b;
+  --color-primary: #008080;
+  --color-primary-light: #4cb0af;
+  --color-primary-dark: #005354;
   --text-color-primary: rgba(0, 0, 0, 0.87);
   --text-color-secondary: rgba(0, 0, 0, 0.6);
   --icon-color: rgba(0, 0, 0, 0.87);
