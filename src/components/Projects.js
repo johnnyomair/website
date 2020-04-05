@@ -23,13 +23,15 @@ export const Projects = () => {
   return (
     <>
       <h2>Recent projects</h2>
-      <ul className={Styles.list}>
+      <ul>
         {projects.map(project => (
           <li key={project.title} className={Styles.listItem}>
-            <span>{project.date}</span>
-            <h3>{project.title}</h3>
-            <p>{project.description}</p>
-            <a href={project.link}>Learn more</a>
+            <span className={Styles.date}>{project.date}</span>
+            <h3 className={Styles.title}>{project.title}</h3>
+            <p className={Styles.description}>{project.description}</p>
+            <a href={project.link} className={Styles.link}>
+              Learn more
+            </a>
           </li>
         ))}
       </ul>

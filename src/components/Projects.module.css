@@ -1,5 +1,21 @@
-.list {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+.listItem {
+  padding: 8px 0;
+}
+
+.listItem:not(:last-child) {
+  border-bottom: 1px dashed var(--divider-color);
+}
+
+.date {
+  font-size: 0.6rem;
+  text-transform: uppercase;
+}
+
+.title {
+  margin: 4px 0;
+}
+
+.description {
+  margin: 4px 0;
+  color: var(--text-color-secondary);
 }

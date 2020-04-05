@@ -9,18 +9,7 @@
   color: var(--text-color-secondary);
 }
 
-.linksContainer {
+.linkContainer {
   display: flex;
   justify-content: center;
-  align-items: flex-start;
-}
-
-.link {
-  display: inline-block;
-  padding: 8px;
-  fill: var(--icon-color);
-}
-
-.link:hover {
-  fill: var(--color-primary);
 }

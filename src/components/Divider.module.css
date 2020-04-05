@@ -1,0 +1,6 @@
+.divider {
+  height: 1px;
+  margin: 32px 48px;
+  border: 0;
+  border-top: 1px dashed var(--divider-color);
+}
