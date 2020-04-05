@@ -19,3 +19,12 @@
   margin: 4px 0;
   color: var(--text-color-secondary);
 }
+
+.linkContainer:not(:last-child)::after {
+  content: "•";
+  padding: 0 4px;
+  color: var(--divider-color);
+  font-size: 0.6rem;
+  line-height: 0.6rem;
+  vertical-align: middle;
+}

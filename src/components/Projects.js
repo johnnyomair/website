@@ -10,9 +10,11 @@ export const Projects = () => {
           frontmatter {
             title
             description
-            link
-            linkText
             date(formatString: "MMM YYYY")
+            links {
+              url
+              text
+            }
           }
         }
       }
@@ -30,13 +32,13 @@ export const Projects = () => {
             <span className={Styles.date}>{project.date}</span>
             <h3 className={Styles.title}>{project.title}</h3>
             <p className={Styles.description}>{project.description}</p>
-            <a
-              href={project.link}
-              title={project.linkText}
-              className={Styles.link}
-            >
-              {project.linkText}
-            </a>
+            {project.links.map(link => (
+              <span key={link.url} className={Styles.linkContainer}>
+                <a href={link.url} title={link.text}>
+                  {link.text}
+                </a>
+              </span>
+            ))}
           </li>
         ))}
       </ul>
