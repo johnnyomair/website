@@ -29,7 +29,11 @@ export const Projects = () => {
             <span className={Styles.date}>{project.date}</span>
             <h3 className={Styles.title}>{project.title}</h3>
             <p className={Styles.description}>{project.description}</p>
-            <a href={project.link} className={Styles.link}>
+            <a
+              href={project.link}
+              title={`Link to ${project.title}`}
+              className={Styles.link}
+            >
               Learn more
             </a>
           </li>
