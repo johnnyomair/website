@@ -15,3 +15,4 @@ collections:
       - { name: description, label: Description }
       - { name: date, label: Date, widget: date }
       - { name: link, label: Link }
+      - { name: linkText, label: Link text }

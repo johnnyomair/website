@@ -11,6 +11,7 @@ export const Projects = () => {
             title
             description
             link
+            linkText
             date(formatString: "MMM YYYY")
           }
         }
@@ -31,10 +32,10 @@ export const Projects = () => {
             <p className={Styles.description}>{project.description}</p>
             <a
               href={project.link}
-              title={`Link to ${project.title}`}
+              title={project.linkText}
               className={Styles.link}
             >
-              Learn more
+              {project.linkText}
             </a>
           </li>
         ))}
