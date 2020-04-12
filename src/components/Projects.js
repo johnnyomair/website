@@ -21,18 +21,18 @@ export const Projects = () => {
     }
   `);
 
-  const projects = data.allMarkdownRemark.nodes.map(node => node.frontmatter);
+  const projects = data.allMarkdownRemark.nodes.map((node) => node.frontmatter);
 
   return (
     <>
       <h2>Recent projects</h2>
       <ul>
-        {projects.map(project => (
+        {projects.map((project) => (
           <li key={project.title} className={Styles.listItem}>
             <span className={Styles.date}>{project.date}</span>
             <h3 className={Styles.title}>{project.title}</h3>
             <p className={Styles.description}>{project.description}</p>
-            {project.links.map(link => (
+            {project.links.map((link) => (
               <span key={link.url} className={Styles.linkContainer}>
                 <a href={link.url} title={link.text}>
                   {link.text}
