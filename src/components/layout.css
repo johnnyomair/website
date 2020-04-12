@@ -60,11 +60,11 @@ a {
   text-decoration: none;
 }
 
+a:visited {
+  color: var(--color-primary-dark);
+}
+
 a:hover {
   color: var(--color-primary-light);
   text-decoration: underline;
-}
-
-a:visited {
-  color: var(--color-primary-dark);
 }
