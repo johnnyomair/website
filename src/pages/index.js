@@ -1,45 +1,50 @@
-import { mdiGithub, mdiGmail, mdiTwitter } from "@mdi/js";
-import Icon from "@mdi/react";
+import { Box, IconButton, Typography } from "@material-ui/core";
+import { Github, Gmail, Twitter } from "mdi-material-ui";
 import React from "react";
-import Layout from "../components/layout";
+import { Layout } from "../components/Layout";
 import { ProfilePicture } from "../components/ProfilePicture";
 import { Projects } from "../components/Projects";
 import SEO from "../components/seo";
-import Styles from "./index.module.css";
-import { Divider } from "../components/Divider";
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <ProfilePicture />
-    <h1 className={Styles.title}>Johannes Obermair</h1>
-    <p className={Styles.info}>Software developer from Salzburg, Austria.</p>
-    <Divider />
+    <Box>
+      <Typography variant="h4" align="center" gutterBottom>
+        Johannes Obermair
+      </Typography>
+      <Typography align="center">
+        Software developer from Salzburg, Austria.
+      </Typography>
+    </Box>
     <Projects />
-    <Divider />
-    <div className={Styles.linksContainer}>
-      <a
+    <Box display="flex" justifyContent="center">
+      <IconButton
+        component="a"
         href="mailto:johannes.obermair@gmail.com"
         title="Send me an email"
-        className={Styles.link}
+        color="primary"
       >
-        <Icon path={mdiGmail} size={1} />
-      </a>
-      <a
+        <Gmail />
+      </IconButton>
+      <IconButton
+        component="a"
         href="https://www.twitter.com/johnnyomair"
         title="Link to my Twitter profile"
-        className={Styles.link}
+        color="primary"
       >
-        <Icon path={mdiTwitter} size={1} />
-      </a>
-      <a
+        <Twitter />
+      </IconButton>
+      <IconButton
+        component="a"
         href="https://www.github.com/johnnyomair"
         title="Link to my GitHub profile"
-        className={Styles.link}
+        color="primary"
       >
-        <Icon path={mdiGithub} size={1} />
-      </a>
-    </div>
+        <Github />
+      </IconButton>
+    </Box>
   </Layout>
 );
 

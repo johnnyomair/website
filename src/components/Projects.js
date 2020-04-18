@@ -1,8 +1,20 @@
+import { Box, Grid, Link, makeStyles, Typography } from "@material-ui/core";
+import { graphql, useStaticQuery } from "gatsby";
 import React from "react";
-import { useStaticQuery, graphql } from "gatsby";
-import Styles from "./Projects.module.css";
+
+const useStyles = makeStyles((theme) => ({
+  list: {
+    display: "grid",
+    gridRowGap: theme.spacing(4),
+    margin: 0,
+    padding: 0,
+    listStyleType: "none",
+  },
+}));
 
 export const Projects = () => {
+  const classes = useStyles();
+
   const data = useStaticQuery(graphql`
     query Projects {
       allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
@@ -24,24 +36,32 @@ export const Projects = () => {
   const projects = data.allMarkdownRemark.nodes.map((node) => node.frontmatter);
 
   return (
-    <>
-      <h2>Recent projects</h2>
-      <ul>
+    <Box component="section">
+      <Typography variant="h5" gutterBottom>
+        Recent projects
+      </Typography>
+      <ul className={classes.list}>
         {projects.map((project) => (
-          <li key={project.title} className={Styles.listItem}>
-            <span className={Styles.date}>{project.date}</span>
-            <h3 className={Styles.title}>{project.title}</h3>
-            <p className={Styles.description}>{project.description}</p>
-            {project.links.map((link) => (
-              <span key={link.url} className={Styles.linkContainer}>
-                <a href={link.url} title={link.text}>
-                  {link.text}
-                </a>
-              </span>
-            ))}
+          <li key={project.title}>
+            <Typography variant="overline">{project.date}</Typography>
+            <Typography variant="h6" gutterBottom>
+              {project.title}
+            </Typography>
+            <Typography variant="body2" gutterBottom>
+              {project.description}
+            </Typography>
+            <Grid container spacing={2}>
+              {project.links.map((link) => (
+                <Grid key={link.url} item>
+                  <Link href={link.url} title={link.text} variant="button">
+                    {link.text}
+                  </Link>
+                </Grid>
+              ))}
+            </Grid>
           </li>
         ))}
       </ul>
-    </>
+    </Box>
   );
 };

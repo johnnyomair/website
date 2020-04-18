@@ -1,19 +1,18 @@
-/**
- * Layout component that queries for data
- * with Gatsby's useStaticQuery component
- *
- * See: https://www.gatsbyjs.org/docs/use-static-query/
- */
+import { makeStyles } from "@material-ui/core";
+import React from "react";
 
-import PropTypes from "prop-types";
-import "./layout.css";
+const useStyles = makeStyles((theme) => ({
+  content: {
+    display: "grid",
+    maxWidth: 400,
+    margin: "0 auto",
+    padding: `${theme.spacing(6)}px ${theme.spacing(1)}px`,
+    gridRowGap: theme.spacing(6),
+  },
+}));
 
-const Layout = ({ children }) => {
-  return children;
+export const Layout = ({ children }) => {
+  const classes = useStyles();
+
+  return <main className={classes.content}>{children}</main>;
 };
-
-Layout.propTypes = {
-  children: PropTypes.node.isRequired,
-};
-
-export default Layout;
