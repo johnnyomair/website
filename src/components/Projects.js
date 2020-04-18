@@ -37,19 +37,17 @@ export const Projects = () => {
 
   return (
     <Box component="section">
-      <Typography variant="h5" gutterBottom>
+      <Typography component="h2" variant="h5" gutterBottom>
         Recent projects
       </Typography>
       <ul className={classes.list}>
         {projects.map((project) => (
           <li key={project.title}>
             <Typography variant="overline">{project.date}</Typography>
-            <Typography variant="h6" gutterBottom>
+            <Typography component="h3" variant="h6" gutterBottom>
               {project.title}
             </Typography>
-            <Typography variant="body2" gutterBottom>
-              {project.description}
-            </Typography>
+            <Typography gutterBottom>{project.description}</Typography>
             <Grid container spacing={2}>
               {project.links.map((link) => (
                 <Grid key={link.url} item>

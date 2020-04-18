@@ -11,7 +11,7 @@ const IndexPage = () => (
     <SEO title="Home" />
     <ProfilePicture />
     <Box>
-      <Typography variant="h4" align="center" gutterBottom>
+      <Typography component="h1" variant="h4" align="center" gutterBottom>
         Johannes Obermair
       </Typography>
       <Typography align="center">
