@@ -37,6 +37,7 @@ module.exports = {
             weights: [`400..700`],
           },
         ],
+        display: "fallback",
       },
     },
     `gatsby-plugin-netlify-cms`,
