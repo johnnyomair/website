@@ -49,6 +49,7 @@ module.exports = {
       },
     },
     `gatsby-transformer-remark`,
+    "gatsby-plugin-top-layout",
     `gatsby-plugin-material-ui`,
   ],
 };

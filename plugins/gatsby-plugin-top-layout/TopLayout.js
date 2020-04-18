@@ -1,10 +1,10 @@
 import { CssBaseline, ThemeProvider } from "@material-ui/core";
 import React from "react";
-import { theme } from "../theme";
+import { theme } from "../../src/theme";
 
-export const wrapRootElement = ({ element }) => (
+export const TopLayout = ({ children }) => (
   <ThemeProvider theme={theme}>
     <CssBaseline />
-    {element}
+    {children}
   </ThemeProvider>
 );
