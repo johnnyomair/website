@@ -41,7 +41,7 @@ img {
 
 html {
   box-sizing: border-box;
-  font-family: "Lato", "Helvetica", "Arial", sans-serif;
+  font-family: "Manrope", sans-serif;
   font-size: 1em;
   color: var(--text-color-primary);
 }

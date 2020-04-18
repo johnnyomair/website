@@ -28,11 +28,15 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-web-font-loader`,
+      resolve: `gatsby-plugin-google-fonts-v2`,
       options: {
-        google: {
-          families: [`Lato:400,700&display=fallback`],
-        },
+        fonts: [
+          {
+            family: `Manrope`,
+            variable: true,
+            weights: [`400..700`],
+          },
+        ],
       },
     },
     `gatsby-plugin-netlify-cms`,
