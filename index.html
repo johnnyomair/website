@@ -52,12 +52,32 @@
     </style>
   </head>
   <body>
-    <img
-      src="/profile-picture.jpg"
-      alt="Profile picture"
-      width="150px"
-      height="150px"
-    />
+    <picture>
+      <source
+        type="image/webp"
+        srcset="
+          profile-picture.webp    150w,
+          profile-picture@2x.webp 300w,
+          profile-picture@3x.webp 450w
+        "
+      />
+      <source
+        type="image/jpeg"
+        srcset="
+          profile-picture.jpg    150w,
+          profile-picture@2x.jpg 300w,
+          profile-picture@3x.jpg 450w
+        "
+      />
+      <img
+        src="profile-picture.jpg"
+        alt="Profile picture"
+        width="150px"
+        height="150px"
+      />
+    </picture>
+
+    <img />
     <h1>Johannes Obermair</h1>
     <p>Software developer from Salzburg, Austria.</p>
     <a href="mailto:johannes.obermair@icloud.com">Contact</a>
