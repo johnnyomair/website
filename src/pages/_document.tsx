@@ -10,7 +10,7 @@ class MyDocument extends Document {
             rel="stylesheet"
           />
           <link rel="icon" href="/favicon.ico" />
-          <meta name="theme_color" content="#222222" />
+          <meta name="theme_color" content="#ffffff" />
         </Head>
         <body>
           <Main />
