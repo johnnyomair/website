@@ -1,0 +1,53 @@
+.container {
+  padding: 0 0.5rem;
+}
+
+.main {
+  padding: 5rem 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.portraitContainer {
+  padding-bottom: 2.5rem;
+}
+
+.portrait {
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.title {
+  margin: 0;
+  line-height: 1.15;
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+.title,
+.description {
+  text-align: center;
+}
+
+.description {
+  line-height: 1.5;
+  font-size: 1.5rem;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.contact {
+  text-transform: uppercase;
+  padding: 8px 16px;
+  border: 2px solid black;
+  border-radius: 4px;
+  transition: background-color 0.25s ease-in-out;
+  font-weight: 500;
+  letter-spacing: 0.2rem;
+}
+
+.contact:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
