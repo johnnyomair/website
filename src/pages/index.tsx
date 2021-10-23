@@ -2,6 +2,7 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
+import portraitPicture from "../../public/portrait-picture.jpg";
 
 const Home: NextPage = () => {
   return (
@@ -16,10 +17,11 @@ const Home: NextPage = () => {
       <main className={styles.main}>
         <div className={styles.portraitContainer}>
           <Image
-            src="/portrait-photo.jpg"
-            alt="Portrait of Johannes"
+            src={portraitPicture}
+            alt="Picture of Johannes"
             width={200}
             height={200}
+            placeholder="blur"
             className={styles.portrait}
           />
         </div>
