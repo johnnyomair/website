@@ -15,7 +15,7 @@
   padding-bottom: 2.5rem;
 }
 
-.portraitContainer > div {
+.portraitContainer > span {
   border-radius: 50%;
   overflow: hidden;
 }
