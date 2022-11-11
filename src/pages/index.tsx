@@ -18,6 +18,7 @@ const Home: NextPage = () => {
         <header className={styles.header}>
           <div className={styles.portraitContainer}>
             <Image
+              className={styles.portrait}
               src={portraitPicture}
               alt="Picture of Johannes"
               width={200}
