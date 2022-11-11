@@ -1,8 +1,6 @@
 {
-  "name": "johannes-obermair-homepage",
+  "name": "website",
   "private": true,
-  "description": "Johannes' personal homepage",
-  "version": "2.0.0",
   "author": "Johannes Obermair <johannes.obermair@icloud.com>",
   "scripts": {
     "dev": "next dev",

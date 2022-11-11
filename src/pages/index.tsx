@@ -11,7 +11,7 @@ const Home: NextPage = () => {
         <title>Johannes Obermair</title>
         <meta
           name="description"
-          content="Personal homepage of Johannes Obermair."
+          content="Software developer from Salzburg, Austria."
         />
       </Head>
       <main className={styles.main}>
