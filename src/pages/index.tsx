@@ -69,7 +69,7 @@ const Home: NextPage = () => {
           <h2 className="text-2xl text-center font-medium mb-6">
             Currently working on
           </h2>
-          <a href="https://weddember.com">
+          <a href="https://weddember.com" title="Weddember">
             <Image
               src="/weddember.svg"
               alt="Weddember logo"
