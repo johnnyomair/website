@@ -70,8 +70,7 @@ const Home: NextPage = () => {
             Currently working on
           </h2>
           <a href="https://weddember.com">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
+            <Image
               src="/weddember.svg"
               alt="Weddember logo"
               width="200"
