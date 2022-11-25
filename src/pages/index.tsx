@@ -1,7 +1,6 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
-import styles from "../styles/Home.module.css";
 import portraitPicture from "../../public/portrait-picture.jpg";
 
 const Home: NextPage = () => {
@@ -14,11 +13,11 @@ const Home: NextPage = () => {
           content="Software developer from Salzburg, Austria."
         />
       </Head>
-      <main className={styles.main}>
-        <header className={styles.header}>
-          <div className={styles.portraitContainer}>
+      <main className="py-20 px-2">
+        <header className="flex flex-col justify-center items-center mb-20">
+          <div className="pb-8">
             <Image
-              className={styles.portrait}
+              className="rounded-full"
               src={portraitPicture}
               alt="Picture of Johannes"
               width={200}
@@ -28,18 +27,25 @@ const Home: NextPage = () => {
             />
           </div>
 
-          <h1 className={styles.title}>Johannes Obermair</h1>
+          <h1 className="text-5xl text-center font-medium mb-6">
+            Johannes Obermair
+          </h1>
 
-          <p className={styles.description}>
+          <p className="text-2xl text-black/60 text-center mb-6">
             Software developer from Salzburg, Austria.
           </p>
 
-          <a href="mailto:mail@johannesobermair.com" className={styles.contact}>
+          <a
+            href="mailto:mail@johannesobermair.com"
+            className="py-2 px-4 rounded border-2 border-solid border-black font-medium uppercase tracking-widest transition-colors duration-300 ease-in-out hover:bg-black/10"
+          >
             Contact
           </a>
         </header>
-        <section className={styles.projects}>
-          <h2 className={styles.titleProjects}>Currently working on</h2>
+        <section className="flex flex-col items-center">
+          <h2 className="text-2xl text-center font-medium mb-6">
+            Currently working on
+          </h2>
           <a href="https://weddember.com">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
