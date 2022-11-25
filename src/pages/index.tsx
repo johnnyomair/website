@@ -35,12 +35,35 @@ const Home: NextPage = () => {
             Software developer from Salzburg, Austria.
           </p>
 
-          <a
-            href="mailto:mail@johannesobermair.com"
-            className="py-2 px-4 rounded border-2 border-solid border-black font-medium uppercase tracking-widest transition-colors duration-300 ease-in-out hover:bg-black/10"
-          >
-            Contact
-          </a>
+          <div className="flex gap-6">
+            <a
+              href="mailto:mail@johannesobermair.com"
+              title="Send me an email"
+              className="hover:fill-teal-700 transition-colors duration-300 ease-in-out"
+            >
+              <svg width="48" height="48">
+                <use xlinkHref="/email.svg#root" />
+              </svg>
+            </a>
+            <a
+              href="https://twitter.com/johnnyomair"
+              title="Follow me on Twitter"
+              className="hover:fill-teal-700 transition-colors duration-300 ease-in-out"
+            >
+              <svg width="48" height="48">
+                <use xlinkHref="/twitter.svg#root" />
+              </svg>
+            </a>
+            <a
+              href="https://github.com/johnnyomair"
+              title="View my code on GitHub"
+              className="hover:fill-teal-700 transition-colors duration-300 ease-in-out"
+            >
+              <svg width="48" height="48">
+                <use xlinkHref="/github.svg#root" />
+              </svg>
+            </a>
+          </div>
         </header>
         <section className="flex flex-col items-center">
           <h2 className="text-2xl text-center font-medium mb-6">
