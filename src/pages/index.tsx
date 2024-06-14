@@ -65,19 +65,6 @@ const Home: NextPage = () => {
             </a>
           </div>
         </header>
-        <section className="flex flex-col items-center">
-          <h2 className="text-2xl text-center font-medium mb-6">
-            Previously worked on
-          </h2>
-          <a href="https://weddember.com" title="Weddember">
-            <Image
-              src="/weddember.svg"
-              alt="Weddember logo"
-              width="200"
-              height="40"
-            />
-          </a>
-        </section>
       </main>
     </>
   );
