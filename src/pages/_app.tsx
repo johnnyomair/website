@@ -1,24 +1,13 @@
 import type { AppProps } from "next/app";
 import "../styles/globals.css";
 import { Montserrat } from "next/font/google";
-import { useEffect } from "react";
-import splitbee from "@splitbee/web";
+import { Analytics } from "@vercel/analytics/react";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
 });
 
 function MyApp({ Component, pageProps }: AppProps) {
-  useEffect(() => {
-    if (process.env.NODE_ENV === "production") {
-      splitbee.init({
-        disableCookie: true,
-        scriptUrl: "/bee.js",
-        apiUrl: "/_hive",
-      });
-    }
-  }, []);
-
   return (
     <>
       <style jsx global>{`
@@ -28,6 +17,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         }
       `}</style>
       <Component {...pageProps} />
+      <Analytics />
     </>
   );
 }
