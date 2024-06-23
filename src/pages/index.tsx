@@ -13,8 +13,8 @@ const Home: NextPage = () => {
           content="Software developer from Salzburg, Austria."
         />
       </Head>
-      <main className="py-20 px-2">
-        <header className="flex flex-col justify-center items-center mb-20">
+      <main className="pt-20 px-2 pb-4">
+        <header className="flex flex-col justify-center items-center">
           <div className="pb-8">
             <Image
               className="rounded-full"
