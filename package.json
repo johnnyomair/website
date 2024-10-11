@@ -1,7 +1,7 @@
 {
   "name": "website",
   "private": true,
-  "author": "Johannes Obermair <johannes.obermair@icloud.com>",
+  "author": "Johannes Obermair <mail@johannesobermair.com>",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
