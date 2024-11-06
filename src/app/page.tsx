@@ -46,12 +46,12 @@ const Home: NextPage = () => {
               </svg>
             </a>
             <a
-              href="https://twitter.com/johnnyomair"
-              title="Follow me on Twitter"
+              href="https://x.com/johnnyomair"
+              title="Follow me on X"
               className="hover:fill-teal-700 transition-colors duration-300 ease-in-out"
             >
               <svg width="48" height="48">
-                <use xlinkHref="/twitter.svg#root" />
+                <use xlinkHref="/x.svg#root" />
               </svg>
             </a>
             <a
