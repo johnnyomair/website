@@ -46,6 +46,15 @@ const Home: NextPage = () => {
               </svg>
             </a>
             <a
+              href="https://www.linkedin.com/in/johnnyomair/"
+              title="Connect with me on LinkedIn"
+              className="hover:fill-teal-700 transition-colors duration-300 ease-in-out"
+            >
+              <svg width="48" height="48">
+                <use xlinkHref="/linkedin.svg#root" />
+              </svg>
+            </a>
+            <a
               href="https://x.com/johnnyomair"
               title="Follow me on X"
               className="hover:fill-teal-700 transition-colors duration-300 ease-in-out"
