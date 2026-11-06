@@ -1,0 +1,83 @@
+---
+import "../styles/global.css";
+import { Image } from "astro:assets";
+import portraitPicture from "../images/portrait-picture.jpg";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="/favicon.ico" sizes="32x32" />
+    <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Johannes Obermair</title>
+    <meta
+      name="description"
+      content="Software developer from Salzburg, Austria."
+    />
+  </head>
+  <body>
+    <main class="pt-20 px-2 pb-4">
+      <header class="flex flex-col justify-center items-center">
+        <div class="pb-8">
+          <Image
+            class="rounded-full"
+            src={portraitPicture}
+            alt="Picture of Johannes"
+            width={200}
+            height={200}
+            layout="fixed"
+            priority
+          />
+        </div>
+
+        <h1 class="text-5xl text-center font-medium mb-6">Johannes Obermair</h1>
+
+        <p class="text-2xl text-black/60 text-center mb-6">
+          Software developer from Salzburg, Austria.
+        </p>
+
+        <div class="flex gap-6">
+          <a
+            href="mailto:mail@johannesobermair.com"
+            title="Send me an email"
+            class="hover:fill-teal-700 transition-colors duration-300 ease-in-out"
+          >
+            <svg width="48" height="48">
+              <use href="/email.svg#root"></use>
+            </svg>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/johnnyomair/"
+            title="Connect with me on LinkedIn"
+            class="hover:fill-teal-700 transition-colors duration-300 ease-in-out"
+          >
+            <svg width="48" height="48">
+              <use href="/linkedin.svg#root"></use>
+            </svg>
+          </a>
+          <a
+            href="https://x.com/johnnyomair"
+            title="Follow me on X"
+            class="hover:fill-teal-700 transition-colors duration-300 ease-in-out"
+          >
+            <svg width="48" height="48">
+              <use href="/x.svg#root"></use>
+            </svg>
+          </a>
+          <a
+            href="https://github.com/johnnyomair"
+            title="View my code on GitHub"
+            class="hover:fill-teal-700 transition-colors duration-300 ease-in-out"
+          >
+            <svg width="48" height="48">
+              <use href="/github.svg#root"></use>
+            </svg>
+          </a>
+        </div>
+      </header>
+    </main>
+  </body>
+</html>
