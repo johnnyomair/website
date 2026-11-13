@@ -2,6 +2,7 @@
   "name": "website",
   "private": true,
   "author": "Johannes Obermair <mail@johannesobermair.com>",
+  "type": "module",
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
