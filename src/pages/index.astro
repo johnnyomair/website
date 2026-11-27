@@ -2,6 +2,7 @@
 import "../styles/global.css";
 import { Image } from "astro:assets";
 import portraitPicture from "../images/portrait-picture.jpg";
+import Analytics from "@vercel/analytics/astro";
 ---
 
 <html lang="en">
@@ -18,6 +19,7 @@ import portraitPicture from "../images/portrait-picture.jpg";
       content="Software developer from Salzburg, Austria."
     />
     <link rel="sitemap" href="/sitemap-index.xml" />
+    <Analytics />
   </head>
   <body>
     <main class="pt-20 px-2 pb-4">
